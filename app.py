@@ -6,15 +6,15 @@ app = Flask(__name__)
 def home():
     return 'Final Project Hunter and Gustavo'
 
-@app.route('/ece418/baseline')
+@app.route('/baseline')
 def baseline():
     return render_template('baseline.html')
 
-@app.route('/ece418/progressive')
+@app.route('/eprogressive')
 def progressive():
     return render_template('progressive.html')
 
-@app.route('/ece418/hierarchical')
+@app.route('/hierarchical')
 def hierarchical():
     return render_template('hierarchical.html')
 
