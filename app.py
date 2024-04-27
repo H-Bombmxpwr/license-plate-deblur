@@ -4,13 +4,13 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'Final Project Hunter and Gustavo'
+    return render_template('index.html')
 
 @app.route('/baseline')
 def baseline():
     return render_template('baseline.html')
 
-@app.route('/eprogressive')
+@app.route('/progressive')
 def progressive():
     return render_template('progressive.html')
 
